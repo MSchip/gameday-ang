@@ -17,12 +17,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'client')));
 
 var router = express.Router();
 
 router.get('/', function(req, res){
-  res.sendFile( path.join(__dirname, '/public/index.html') );
+  res.sendFile( path.join(__dirname, '/client/index.html') );
 });
 
 app.use( '/', router );
