@@ -5,4 +5,4 @@
 .Spotlight-V100
 .Trashes
 node_modules/
-public/lib/
+client/lib/
