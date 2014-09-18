@@ -4,8 +4,15 @@ angular
     $urlRouterProvider.otherwise( '/games' )
 
     $stateProvider
-      .state( '/games', {
+      .state( 'games', {
         url: '/games',
-        templateUrl: 'games.html'
+        views: {
+          'main-game': { 
+            templateUrl: 'app/templates/game.html'
+          },
+          'side-games': {
+            templateUrl: 'app/templates/games.html'
+          }
+        }
       })
   })
